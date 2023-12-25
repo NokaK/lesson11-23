@@ -1,0 +1,40 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.grid {
+  background-color: brown;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+  border: 1px solid black;
+  padding: 10px;
+}
+.item img {
+  width: 100%;
+}
+.block {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .grid {
+    background-color: chocolate;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item {
+    background-color: aqua;
+  }
+  .block {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    background-color: coral;
+    grid-template-columns: 1fr;
+  }
+}
